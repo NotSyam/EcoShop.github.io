@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoShop - Checkout</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+    <header>
+        <h1>EcoShop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="checkout">
+            <h2>Checkout</h2>
+            <form id="checkoutForm">
+                <div class="billing-info">
+                    <h3>Billing Information</h3>
+                    <input type="text" name="billingName" placeholder="Full Name" required>
+                    <input type="email" name="billingEmail" placeholder="Email Address" required>
+                    <input type="text" name="billingAddress" placeholder="Address" required>
+                    <input type="text" name="billingCity" placeholder="City" required>
+                    <input type="text" name="billingState" placeholder="State" required>
+                    <input type="text" name="billingZip" placeholder="Zip Code" required>
+                </div>
+
+                <div class="shipping-info">
+                    <h3>Shipping Information</h3>
+                    <label><input type="checkbox" id="sameAsBilling"> Same as Billing</label>
+                    <input type="text" name="shippingName" placeholder="Full Name" required>
+                    <input type="text" name="shippingAddress" placeholder="Address" required>
+                    <input type="text" name="shippingCity" placeholder="City" required>
+                    <input type="text" name="shippingState" placeholder="State" required>
+                    <input type="text" name="shippingZip" placeholder="Zip Code" required>
+                </div>
+
+                <div class="payment-info">
+                    <h3>Payment Method</h3>
+                    <select name="paymentMethod">
+                        <option value="creditCard">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+                    <input type="text" name="cardNumber" placeholder="Card Number">
+                    <input type="text" name="cardExpiry" placeholder="Expiry Date (MM/YY)">
+                    <input type="text" name="cardCVC" placeholder="CVC">
+                </div>
+
+                <div class="order-review">
+                    <h3>Order Review</h3>
+                    <div class="cart-items">
+                        <div class="cart-item">
+                            <img src="image/Square.png" alt="Reusable Water Bottle">
+                            <div class="item-details">
+                                <h4>Reusable Water Bottle</h4>
+                                <p>Quantity: 1</p>
+                                <p class="price">$25.00</p>
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <img src="image/Square.png" alt="Organic Cotton Tote Bag">
+                            <div class="item-details">
+                                <h4>Organic Cotton Tote Bag</h4>
+                                <p>Quantity: 2</p>
+                                <p class="price">$15.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Subtotal: $55.00</p>
+                    <p>Shipping: $5.00</p>
+                    <p class="total">Total: $60.00</p>
+                </div>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 EcoShop. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

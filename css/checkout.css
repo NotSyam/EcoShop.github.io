@@ -1,0 +1,82 @@
+/* Checkout Page Specific Styles */
+.checkout {
+    padding: 20px 0;
+}
+
+.checkout form {
+    display: flex;
+    flex-direction: column;
+}
+
+.billing-info,
+.shipping-info,
+.payment-info,
+.order-review {
+    border: 1px solid var(--accent-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.billing-info h3,
+.shipping-info h3,
+.payment-info h3,
+.order-review h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.checkout input[type="text"],
+.checkout input[type="email"],
+.checkout select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+}
+
+.shipping-info label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.order-review .cart-items {
+    margin-bottom: 15px;
+}
+
+.order-review .cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.order-review .cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.order-review .cart-item .item-details h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.order-review .cart-item .item-details p {
+    margin: 0;
+}
+
+.total {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens if needed */
+}
